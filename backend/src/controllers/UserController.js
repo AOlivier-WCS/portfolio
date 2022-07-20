@@ -28,13 +28,12 @@ class UserController {
         if (rows[0] == null) {
           res.status(403).send("Email ou mot de passe incorrect");
         } else {
-          const { id, password: hash, role } = rows[0];
+          const { id, password: hash } = rows[0];
 
           if (await argon2.verify(hash, password)) {
             const token = await jwt.sign(
               {
                 id,
-                role,
               },
               process.env.JWT_AUTH_SECRET,
               {
@@ -51,7 +50,6 @@ class UserController {
               .send({
                 id,
                 email,
-                role,
               });
           } else {
             res.status(401).send({

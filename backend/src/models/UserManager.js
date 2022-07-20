@@ -5,17 +5,22 @@ class UserManager extends AbstractManager {
 
   update(user) {
     return this.connection.query(
-      `update ${UserManager.table} set firstname = ?, lastname = ?, email = ?, phoneNumber = ?, address = ?, postalCode = ?, city = ? where id = ?`,
+      `update ${UserManager.table} set nom = ?, prenom = ?, email = ?, ville = ?, presentation = ? where id = ?`,
       [
-        user.firstname,
-        user.lastname,
+        user.nom,
+        user.prenom,
         user.email,
-        user.phoneNumber,
-        user.address,
-        user.postalCode,
-        user.city,
+        user.ville,
+        user.presentation,
         user.id,
       ]
+    );
+  }
+
+  findByMail(email) {
+    return this.connection.query(
+      `select * from ${UserManager.table} where email = ?`,
+      [email]
     );
   }
 

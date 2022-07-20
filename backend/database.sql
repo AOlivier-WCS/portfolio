@@ -12,12 +12,12 @@ CREATE TABLE `user` (
   `prenom` varchar(255),
   `email` varchar(255),
   `ville` varchar(255),
-  `presentation` TEXT,
+  `presentation` text,
   `password` varchar(255)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-INSERT INTO `user` (nom, prenom, email, ville, password) VALUES
-('Olivier', 'Alexis', "alexis_olivier@hotmail.fr", "St Julien de Concelles", "$argon2i$v=19$m=16,t=2,p=1$NDVwU1RhQ2V0cVVnd1pqSA$7lRGFw6cpt4mz2o6uLozbw");
+INSERT INTO `user` (nom, prenom, email, ville, presentation, password) VALUES
+("Olivier", "Alexis", "alexis_olivier@hotmail.fr", "St Julien de Concelles", "bootcamp de 5 mois", "$argon2i$v=19$m=16,t=2,p=1$NDVwU1RhQ2V0cVVnd1pqSA$7lRGFw6cpt4mz2o6uLozbw");
 
 DROP TABLE IF EXISTS `entreprises`;
 CREATE TABLE `entreprises` (
