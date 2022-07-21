@@ -4,7 +4,7 @@ const { ProjetController } = require("../controllers");
 
 const router = express.Router();
 
-router.get("/projet", ProjetController.browse);
-router.put("/projet", ProjetController.edit);
+router.get("/projets", ProjetController.browse);
+router.put("/projets", ProjetController.edit);
 
 module.exports = router;

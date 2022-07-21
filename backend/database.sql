@@ -40,19 +40,20 @@ CREATE TABLE `technos` (
 
 INSERT INTO `technos` (nom, image_url) VALUES
 ('HTML', 'https://img1.freepng.fr/20180322/iuw/kisspng-web-development-html-logo-world-wide-web-consortiu-create-html-signature-5ab4731a64e900.6118207815217753864133.jpg'),
-("CSS", "https://img1.freepng.fr/20180503/ygq/kisspng-web-development-html-css3-the-ohana-code-logo-2cpaper-projection-shaded_1660937-html-dropdown-js-5aebd562e66d85.8124523515254050269438.jpg");
+("CSS", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/640px-CSS3_logo_and_wordmark.svg.png");
 
 DROP TABLE IF EXISTS `projets`;
 CREATE TABLE `projets` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
   `nom` varchar(255),
   `description` varchar(255),
-  `image_url` varchar(255)
+  `image_url` varchar(255),
+  `liens` VARCHAR(255)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-INSERT INTO `projets` (nom, description, image_url) VALUES
-('Sharing is Caring', 'projet client fictif site vitrine espace de co working', 'https://aolivier-wcs.github.io/Projet-1-Espace-CoWorking/img/logo.png'),
-("Tatou Quiz", "application web de divertissement", "https://tatou-quiz.netlify.app/assets/logo_toto.d4641405.png");
+INSERT INTO `projets` (nom, description, image_url, liens) VALUES
+('Sharing is Caring', 'projet client fictif site vitrine espace de co working', 'https://aolivier-wcs.github.io/Projet-1-Espace-CoWorking/img/logo.png', "https://aolivier-wcs.github.io/Projet-1-Espace-CoWorking/"),
+("Tatou Quiz", "application web de divertissement", "https://tatou-quiz.netlify.app/assets/logo_toto.d4641405.png", "tatou-quiz.netlify.app/");
 
 DROP TABLE IF EXISTS `technoProjets`;
 CREATE TABLE `technoProjets` (

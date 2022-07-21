@@ -6,6 +6,7 @@ const cookieParser = require("cookie-parser");
 const UserRouter = require("./router/UserRouter");
 const EntrepriseRouter = require("./router/EntrepriseRouter");
 const ProjetRouter = require("./router/ProjetRouter");
+const TechnosRouter = require("./router/TechnosRouter");
 
 const app = express();
 
@@ -31,6 +32,7 @@ app.use(express.static(path.join(__dirname, "..", "..", "frontend", "dist")));
 app.use(UserRouter);
 app.use(EntrepriseRouter);
 app.use(ProjetRouter);
+app.use(TechnosRouter);
 
 // Redirect all requests to the REACT app
 const reactIndexFile = path.join(
