@@ -40,7 +40,8 @@ CREATE TABLE `technos` (
 
 INSERT INTO `technos` (nom, image_url) VALUES
 ('HTML', 'https://img1.freepng.fr/20180322/iuw/kisspng-web-development-html-logo-world-wide-web-consortiu-create-html-signature-5ab4731a64e900.6118207815217753864133.jpg'),
-("CSS", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/640px-CSS3_logo_and_wordmark.svg.png");
+("CSS", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/640px-CSS3_logo_and_wordmark.svg.png"),
+("React", "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png");
 
 DROP TABLE IF EXISTS `projets`;
 CREATE TABLE `projets` (
@@ -62,7 +63,7 @@ CREATE TABLE `technoProjets` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `technoProjets` (technos_id, projets_id) VALUES
-(1, 1), (1,2), (2,1), (2,2);
+(1, 1), (1,2), (2,1), (2,2), (3,2);
 
 DROP TABLE IF EXISTS `technoEntreprise`;
 CREATE TABLE `technoEntreprise` (

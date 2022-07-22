@@ -1,0 +1,29 @@
+.boutonLogout {
+  background-color: var(--first-grey);
+  border: none;
+  color: var(--third-terracotta);
+  margin-top: 20px;
+  padding: 10px 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.boutonLogout:hover {
+  background-color: var(--secondary-grey);
+  border: none;
+}
+
+.swal-modal {
+  width: 350px;
+  height: 200px;
+}
+
+.swal-footer {
+  display: flex;
+  justify-content: center;
+}

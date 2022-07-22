@@ -1,0 +1,115 @@
+@import "../../App.css";
+#navbar-link-membre,
+#navbar-link-site,
+#navbar-link-Website,
+#navbar-link-logout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--first-color);
+  background: var(--first-beige);
+  padding: 2%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 13vw;
+  font-size: 1.2vw;
+  text-decoration: none;
+}
+.nabar-links {
+  display: flex;
+}
+
+.navabar-welcome-logo {
+  display: flex;
+  align-items: center;
+}
+#navbar-logo {
+  align-items: center;
+  padding: 20px;
+}
+
+#navbar-link-membre-select {
+  color: var(--first-beige);
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 17%;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+#navbar-link-site-select {
+  color: var(--first-beige);
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 17%;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+#navbar-welcome {
+  color: var(--first-beige);
+  align-self: center;
+  font-size: 200%;
+}
+#navbar-link-membre {
+  width: 200px;
+}
+#navbar-admin {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--first-color);
+  height: 20vh;
+  width: 100vw;
+}
+
+#navbar-link-membre:hover {
+  background-color: var(--secondary-color);
+  color: var(--first-beige);
+}
+
+#navbar-link-site:hover {
+  background-color: var(--secondary-color);
+  color: var(--first-beige);
+}
+
+#navbar-link-Website:hover {
+  background-color: var(--secondary-color);
+  color: var(--first-beige);
+}
+
+#navbar-link-logout:hover {
+  background-color: var(--secondary-color);
+  color: var(--first-beige);
+}
+.navbar-bar-button {
+  display: none;
+}
+
+@media (max-width: 550px) {
+  .navabar-welcome-logo {
+    display: none;
+  }
+
+  #navbar-link-membre,
+  #navbar-link-site,
+  #navbar-link-Website,
+  #navbar-link-logout {
+    width: 20vw;
+    font-size: 0.5rem;
+  }
+
+  #navbar-admin {
+    height: 5vh;
+    width: 100vw;
+  }
+}

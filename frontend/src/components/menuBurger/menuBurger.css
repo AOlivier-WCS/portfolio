@@ -1,0 +1,14 @@
+.navBar {
+  position: absolute;
+  left: 20px;
+  top: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.navBar > a {
+  text-decoration: none;
+  font-size: larger;
+  color: azure;
+}

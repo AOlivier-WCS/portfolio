@@ -1,0 +1,25 @@
+.carteProjet > img {
+  max-width: 50px;
+  max-height: 150px;
+}
+
+.carteProjet {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.conteneurCarte {
+  display: flex;
+  background-color: white;
+  margin: 20px;
+  border-radius: 20%;
+}
+
+.logoTechnos {
+  display: flex;
+  flex-direction: row;
+  max-width: 50px;
+  max-height: 50px;
+  gap: 20px;
+}

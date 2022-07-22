@@ -15,6 +15,22 @@ class UserController {
       });
   };
 
+  static add = (req, res) => {
+    const name = req.body;
+
+    models.user
+      .insert(name)
+      .then(([result]) => {
+        res.status(201).send({ id: result.insertId, ...name });
+      })
+      .catch((err) => {
+        console.error(err);
+        res.status(500).send({
+          error: err.message,
+        });
+      });
+  };
+
   static login = async (req, res) => {
     const { email, password } = req.body;
 
